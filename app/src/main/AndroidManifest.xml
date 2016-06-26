@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.raqib.instadate">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.raqib.instadate.MainActivity" />
+
+        <activity
+            android:name=".Register"
+            android:label="@string/title_activity_register"
+            android:parentActivityName=".Login"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.raqib.instadate.MainActivity" />
+
+        <activity
+            android:name=".CustomizationActivity"
+            android:label="@string/title_activity_customization"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CustomList"
+            android:label="@string/title_activity_custom_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AboutInstaDate"
+            android:label="@string/title_activity_about_insta_date"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DetailedNews"
+            android:label="@string/title_activity_detailed_news"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CustomizationDrawer"
+            android:label="@string/title_activity_customization_drawer"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

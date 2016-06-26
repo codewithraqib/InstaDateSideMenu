@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.raqib.instadate.AboutInstaDate">
+
+    <item
+        android:id="@+id/action_followMe"
+        android:orderInCategory="1"
+        android:title="@string/action_FollowMe"
+        app:showAsAction="always"
+        android:icon="@drawable/twitter"
+        />
+
+
+</menu>

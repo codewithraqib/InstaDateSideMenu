@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.raqib.instadate.Login"
+    tools:showIn="@layout/activity_login">
+
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action_RegisterEmail"
+        android:textStyle="bold"
+        android:textColor="#05e65b"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textViewUser"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/UserEmailLogin"
+        android:hint="@string/action_RegisterEmailHint"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_gravity="center_vertical"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action_RegisterPassword"
+        android:textStyle="bold"
+        android:textColor="#05e65b"
+        android:textSize="20sp"
+        android:layout_gravity="bottom"
+        android:layout_below="@+id/UserEmailLogin"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:id="@+id/LoginButton"
+        android:text="@string/action_LoginButton"
+        android:layout_width="wrap_content"
+        android:textColor="#ffffff"
+        android:background="#04691a"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:layout_below="@+id/UserEmailLogin"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="@string/action_RegisterPasswordHint1"
+        android:ems="10"
+        android:id="@+id/UserLoginPassword"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:id="@+id/RegisterHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action_RegisterHere"
+        android:textStyle="bold"
+        android:textColor="#05e65b"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="bottom"
+        android:layout_below="@+id/LoginButton"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/textViewUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USER"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:textColor="#e60509"
+        android:textSize="20sp"
+        android:layout_toLeftOf="@+id/textView1"
+        android:layout_toStartOf="@+id/textView1" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_launcher"
+        android:id="@+id/imageViewUser"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/textViewUser"
+        android:layout_toStartOf="@+id/textViewUser" />
+
+</RelativeLayout>
